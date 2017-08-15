@@ -1,0 +1,1 @@
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" sharedfolder add default --name e/Code --hostpath \\?\e:\Code --automount

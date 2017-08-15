@@ -1,0 +1,6 @@
+#!/bin/sh
+
+mkdir -p /var/lib/php7/sessions
+chown nginx:nginx /var/lib/php7/sessions
+mkdir -p /var/log/php-fpm
+touch /var/log/php-fpm/fpm-error.log
