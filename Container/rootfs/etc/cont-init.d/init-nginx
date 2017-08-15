@@ -1,9 +1,13 @@
 #!/bin/sh
 
-mkdir -p /var/www
-chown -Rf nginx:nginx /var/www
+#mkdir -p /var/www
+#chown -Rf nginx:nginx /var/www
+mkdir -p /usr/share/nginx/html
+chown -Rf nginx:nginx /usr/share/nginx/html
 mkdir -p /tmp/nginx/client-body
 chown -R nginx /tmp/nginx
 mkdir -p /var/log/nginx
 touch /var/log/nginx/access.log
 touch /var/log/nginx/error.log
+
+nginx -T
